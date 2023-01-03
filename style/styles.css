@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@100;700&display=swap');
+
+#container{
+    background-color: red;
+    width: 414px;
+    margin: 0 auto;
+}
+.header{
+    background-color: blue;
+    width: 414px;
+    height: 92px;
+}
+.categoria-prato{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 260px;
+    margin-top: 31px;
+}
+.categoria-bebida{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 260px;
+    margin-top: 27px;
+    margin-bottom: 27px;
+
+}
+.categoria-sobremesa{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 260px;
+    margin-bottom: 12px;
+}
+.footer{
+    background-color: blueviolet;
+    width: 414px;
+    height: 92px;
+}
