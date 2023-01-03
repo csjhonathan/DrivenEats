@@ -11,7 +11,7 @@ body{
 #container{
     background: #E5E5E5;
     margin:0 auto;
-    padding-top: 123px;
+    padding-top: 110px;
     padding-bottom: 104px;
 }
 .header{
@@ -58,8 +58,8 @@ h1{
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    margin-top: 27px;
-    margin-bottom: 27px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .sobremesas{
@@ -70,7 +70,7 @@ h1{
     margin-bottom: 12px;
 }
 
-.passo{
+.step{
     font-family: 'Righteous';
     font-style: normal;
     font-weight: 400;
