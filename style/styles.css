@@ -91,6 +91,7 @@ h1{
 .opcao{
     background-color: #ffffff;
     min-width: 172px;
+    max-width: 172px;
     height: 216px;
     margin-top: 17px;
     margin-left: 16px;
@@ -103,6 +104,7 @@ h1{
     font-family: 'Roboto';
     font-style: normal;
     position: relative;
+    cursor: pointer;
 }
 
 .opcao h2{
@@ -123,18 +125,6 @@ h1{
     line-height: 19px;
     color: #000000;
 }
-/*.opcao ion-icon{
-    width: 16px;
-    height: 16px;
-    position: absolute;
-    bottom: 16px;
-    right: 13px;
-    color: #32b72f;
-}*/
-.opcao:hover{
-    padding: 10px;
-}
-
 .footer button{
     width: 364px;
     height: 61px;
