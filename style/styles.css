@@ -45,14 +45,14 @@ h1{
     color: #FFFFFF;
 }
 
-.prato{
+.pratos{
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
 }
 
-.bebida{
+.bebidas{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,7 +61,7 @@ h1{
     margin-bottom: 27px;
 }
 
-.sobremesa{
+.sobremesas{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,7 +101,9 @@ h1{
     justify-content: space-around;
     font-family: 'Roboto';
     font-style: normal;
+    position: relative;
 }
+
 .opcao h2{
     font-weight: 700;
     font-size: 16px;
@@ -119,6 +121,17 @@ h1{
     font-size: 16px;
     line-height: 19px;
     color: #000000;
+}
+/*.opcao ion-icon{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    bottom: 16px;
+    right: 13px;
+    color: #32b72f;
+}*/
+.opcao:hover{
+    padding: 10px;
 }
 
 .footer button{
