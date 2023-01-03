@@ -10,7 +10,6 @@ body{
 
 #container{
     background: brown;
-    width: 414px;
     margin:0 auto;
     padding-top: 123px;
     padding-bottom: 104px;
@@ -36,7 +35,7 @@ h1{
 
 .header{
     background: #CF2B2B;
-    width: 414px;
+    width: 100%;
     height: 92px;
     position: fixed;
     top: 0px;
@@ -118,7 +117,7 @@ h1{
 
 .footer{
     background: #FFFFFF;
-    width: 414px;
+    width: 100%;
     height: 92px;
     position: fixed;
     bottom: 0px;
