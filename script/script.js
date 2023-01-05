@@ -1,55 +1,63 @@
+const btn = document.getElementById('btnOrderEnd')
+let order = [];
+function selecionaPrato(prato, sectionName) {
+    const section = document.querySelector(sectionName)
+    const btnSelectedBefore = section.querySelector(`.selected`);
+    if (btnSelectedBefore !== null) {
+        btnSelectedBefore.classList.remove("selected");
+    }
+    const selectedBtn = document.querySelector(prato);
+    selectedBtn.classList.add("selected");
 
-function selecionaPrato(prato){
-    if(prato === "parmegiana"){
-        document.getElementById("parmegiana").style.borderColor = "#32B72F";
-        document.getElementById("strogonorfe").style.borderColor = "white";
-        document.getElementById("peixinho").style.borderColor = "white";
-        return "estou aqui";
-    } else if(prato === "strogonorfe"){
-        document.getElementById("strogonorfe").style.borderColor = "#32B72F";
-        document.getElementById("peixinho").style.borderColor = "white";
-        document.getElementById("parmegiana").style.borderColor = "white";
-        return prato;
-    } else if (prato === "peixinho"){
-        document.getElementById("peixinho").style.borderColor = "#32B72F";
-        document.getElementById("strogonorfe").style.borderColor = "white";
-        document.getElementById("parmegiana").style.borderColor = "white";
-        return prato;
-    };
+    
+    if (!order.includes(1)){
+        order.push(1)
+    }
+
+    btnEnable(order)
+};
+function selecionaBebida(bebida, sectionName) {
+    const section = document.querySelector(sectionName)
+    const btnSelectedBefore = section.querySelector(`.selected`);
+    if (btnSelectedBefore !== null) {
+        btnSelectedBefore.classList.remove("selected");
+    }
+    const selectedBtn = document.querySelector(bebida);
+    selectedBtn.classList.add("selected");
+
+    if (!order.includes(2)){
+        order.push(2)
+    }
+    btnEnable(order)
 };
 
 
+function selecionaSobremesa(sobremesa, sectionName) {
+    const section = document.querySelector(sectionName)
+    const btnSelectedBefore = section.querySelector(`.selected`);
+    if (btnSelectedBefore !== null) {
+        btnSelectedBefore.classList.remove("selected");
+    }
+    const selectedBtn = document.querySelector(sobremesa);
+    selectedBtn.classList.add("selected");
 
-
-function selecionaBebida(bebida){
-    if(bebida === "coquinha"){
-        document.getElementById("coquinha").style.borderColor = "#32B72F";
-        document.getElementById("fantinha").style.borderColor = "white";
-        document.getElementById("mineirinho").style.borderColor = "white";
-    } else if(bebida === "fantinha"){
-        document.getElementById("fantinha").style.borderColor = "#32B72F";
-        document.getElementById("mineirinho").style.borderColor = "white";
-        document.getElementById("coquinha").style.borderColor = "white";
-    } else if (bebida === "mineirinho"){
-        document.getElementById("mineirinho").style.borderColor = "#32B72F";
-        document.getElementById("fantinha").style.borderColor = "white";
-        document.getElementById("coquinha").style.borderColor = "white";
-    };
+    if (!order.includes(3)){
+        order.push(3)
+    }
+    btnEnable(order)
 };
 
 
-function selecionaSobremesa(sobremesa){
-    if(sobremesa === "tiramisu"){
-        document.getElementById("tiramisu").style.borderColor = "#32B72F";
-        document.getElementById("pavê").style.borderColor = "white";
-        document.getElementById("pudim").style.borderColor = "white";
-    } else if(sobremesa === "pavê"){
-        document.getElementById("pavê").style.borderColor = "#32B72F";
-        document.getElementById("pudim").style.borderColor = "white";
-        document.getElementById("tiramisu").style.borderColor = "white";
-    } else if (sobremesa === "pudim"){
-        document.getElementById("pudim").style.borderColor = "#32B72F";
-        document.getElementById("pavê").style.borderColor = "white";
-        document.getElementById("tiramisu").style.borderColor = "white";
-    };
-};
+function btnEnable(order){
+    let qtdOrder = order.length;
+    let itemNameInsert = qtdOrder === 2 ? "item" : "itens";
+
+    if(qtdOrder === 3){
+        btn.classList.add('btnEnabled')
+        btn.removeAttribute('disabled')
+        btn.innerHTML = `Fechar pedido`
+    } else {
+        btn.innerHTML = `Selecione mais ${3 - qtdOrder} ${itemNameInsert}</br>para fechar o pedido`
+    }
+}
+

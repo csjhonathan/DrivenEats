@@ -6,9 +6,6 @@
 html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-body{
-    background-color: chartreuse;
-}
 
 #container{
     background: #E5E5E5;
@@ -126,6 +123,9 @@ h1{
     line-height: 19px;
     color: #000000;
 }
+.selected{
+    border-color:#32B72F;
+}
 .footer button{
     width: 364px;
     height: 61px;
@@ -151,4 +151,8 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#btnOrderEnd.btnEnabled {
+    background-color:#32B72F;
 }
