@@ -101,10 +101,41 @@
         </div>
 
         <div class="footer">
-            <button id="btnOrderEnd" disabled>
+            <button id="btnOrderEnd" disabled onclick="checkout('.sonic', '.modal')">
                 Selecione os 3 itens</br>para fechar o pedido
             </button>
         </div>
+
+        <div class="sonic hidden" ></div>
+        <div class="modal hidden" >
+
+            <h2 class="confirm">Confirme seu pedido</h2>
+            
+            <div>
+                <p class="item">aaaaaaa</p>
+                <p class="preco">0000</p>
+            </div>
+
+            <div>
+                <p class="item">aaaaa</p>
+                <p class="preco">0000</p>
+            </div>
+
+            <div>
+                <p class="item">aaaa</p>
+                <p class="preco">0000</p>
+            </div>
+
+            <div class="total">
+                <p> total </p>
+                <p class="valor">0000</p>
+            </div>
+            <div>
+                <button class="finish">Tudo certo, pode pedir!</button>
+                <button class="cancel" onclick="checkout('.sonic', '.modal')">Cancelar</button>
+            </div>
+        </div>
+        
     </div>
 </body>
 </html>

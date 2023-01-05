@@ -1,4 +1,4 @@
-const btn = document.getElementById('btnOrderEnd')
+const btn = document.getElementById('btnOrderEnd');
 let order = [];
 function selecionaPrato(prato, sectionName) {
     const section = document.querySelector(sectionName)
@@ -60,4 +60,16 @@ function btnEnable(order){
         btn.innerHTML = `Selecione mais ${3 - qtdOrder} ${itemNameInsert}</br>para fechar o pedido`
     }
 }
+
+function checkout(blur, modal){
+    const blurSelect =  document.querySelector(blur);
+    const modalSelect =  document.querySelector(modal);
+    if(btn.classList.contains('btnEnabled')){
+        [blurSelect, modalSelect].forEach(e => {
+            e.classList.toggle('hidden')
+        })
+    }
+    console.log("oi")
+}
+
 
