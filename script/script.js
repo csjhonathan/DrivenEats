@@ -1,11 +1,14 @@
 const btn = document.getElementById('btnOrderEnd');
 let order = [];
+
 function selecionaPrato(prato, sectionName) {
     const section = document.querySelector(sectionName)
     const btnSelectedBefore = section.querySelector(`.selected`);
     if (btnSelectedBefore !== null) {
         btnSelectedBefore.classList.remove("selected");
     }
+
+    document.querySelector('.icone').classList.remove('check');
     const selectedBtn = document.querySelector(prato);
     selectedBtn.classList.add("selected");
 
@@ -16,6 +19,7 @@ function selecionaPrato(prato, sectionName) {
 
     btnEnable(order)
 };
+
 function selecionaBebida(bebida, sectionName) {
     const section = document.querySelector(sectionName)
     const btnSelectedBefore = section.querySelector(`.selected`);
@@ -69,7 +73,15 @@ function checkout(blur, modal){
             e.classList.toggle('hidden')
         })
     }
-    console.log("oi")
 }
 
+function cancel(){
+    const blurSelect =  document.querySelector(blur);
+    const modalSelect =  document.querySelector(modal);
+    if(btn.classList.contains('btnEnabled')){
+        [blurSelect, modalSelect].forEach(e => {
+            e.classList.toggle('hidden')
+        })
+    }
+}
 
