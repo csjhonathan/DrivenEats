@@ -5,7 +5,7 @@ let order = []; //contador para habilitar o botão de fechar pedido
 // prato = id do prato, section = categoria. checkmark = id do checkmark
 function selecionaPrato(prato, sectionName, checkmark) {
     
-    const selectedBtn = document.querySelector(prato);
+    const selectedBtn = document.querySelector(prato); //<--quem chamou a função
     const section = document.querySelector(sectionName) //<-- captura a seção
     const btnSelectedBefore = section.querySelector(`.selected`); //<-- captura a opção que tenha a classe selected, ou seja, que está selecionado
     const chek = document.querySelector(checkmark); //<-- captura o checkmark que desejo mostrar
@@ -13,11 +13,13 @@ function selecionaPrato(prato, sectionName, checkmark) {
     
     if (btnSelectedBefore !== null) { //<-- caso btnSelectedBefore encontre alguém selecionado
         btnSelectedBefore.classList.remove("selected"); //<-- remove a seleção
-        checkedBefore.classList.remove('show-check');//<-- remove o checkmark
+        //checkedBefore.classList.remove('show-check');//<-- remove o checkmark
+        btnSelectedBefore.querySelector(".show-check").classList.remove('show-check')
     }
     
     selectedBtn.classList.add("selected"); //<-- adiciona a seleção
     chek.classList.add('show-check'); //<-- adiciona o checkmark
+    
 
 
     if (!order.includes(1)) {
@@ -38,7 +40,8 @@ function selecionaBebida(bebida, sectionName, checkmark) {
     
     if (btnSelectedBefore !== null) {
         btnSelectedBefore.classList.remove("selected");
-        checkedBefore.classList.remove('show-check');
+        //checkedBefore.classList.remove('show-check');
+        btnSelectedBefore.querySelector(".show-check").classList.remove('show-check');
     }
     
     selectedBtn.classList.add("selected");
@@ -61,7 +64,8 @@ function selecionaSobremesa(sobremesa, sectionName, checkmark) {
     
     if (btnSelectedBefore !== null) {
         btnSelectedBefore.classList.remove("selected");
-        checkedBefore.classList.remove('show-check');
+        //checkedBefore.classList.remove('show-check');
+        btnSelectedBefore.querySelector(".show-check").classList.remove('show-check')
     }
     
     selectedBtn.classList.add("selected");
