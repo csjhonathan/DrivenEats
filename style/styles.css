@@ -109,9 +109,14 @@ h1 {
     position: relative;
     cursor: pointer;
 }
-.check{
+.hidden-check{
     opacity: 0;
 }
+.show-check{
+    opacity: 1;
+    transition: all .5s;
+}
+
 .opcao h2 {
     font-weight: 700;
     font-size: 16px;
@@ -140,6 +145,7 @@ h1 {
 
 .selected {
     border-color: #32B72F;
+    transition: all .5s;
 }
 
 .footer button {
