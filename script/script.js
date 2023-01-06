@@ -1,3 +1,11 @@
+let dishPrice = 0; //<-- armazena o preço do prato
+let drinkPrice = 0; //<-- armazena o preço da bebida
+let dessertPrice = 0; //<-- armazena o preço da sobremesa
+
+
+
+
+
 const btn = document.getElementById('btnOrderEnd');
 let order = []; //contador para habilitar o botão de fechar pedido
 
@@ -13,8 +21,7 @@ function selecionaPrato(prato, sectionName, checkmark) {
     
     if (btnSelectedBefore !== null) { //<-- caso btnSelectedBefore encontre alguém selecionado
         btnSelectedBefore.classList.remove("selected"); //<-- remove a seleção
-        //checkedBefore.classList.remove('show-check');//<-- remove o checkmark
-        btnSelectedBefore.querySelector(".show-check").classList.remove('show-check')
+        btnSelectedBefore.querySelector(".show-check").classList.remove('show-check');//<-- remove o checkmark
     }
     
     selectedBtn.classList.add("selected"); //<-- adiciona a seleção
@@ -40,7 +47,6 @@ function selecionaBebida(bebida, sectionName, checkmark) {
     
     if (btnSelectedBefore !== null) {
         btnSelectedBefore.classList.remove("selected");
-        //checkedBefore.classList.remove('show-check');
         btnSelectedBefore.querySelector(".show-check").classList.remove('show-check');
     }
     
@@ -64,7 +70,6 @@ function selecionaSobremesa(sobremesa, sectionName, checkmark) {
     
     if (btnSelectedBefore !== null) {
         btnSelectedBefore.classList.remove("selected");
-        //checkedBefore.classList.remove('show-check');
         btnSelectedBefore.querySelector(".show-check").classList.remove('show-check')
     }
     

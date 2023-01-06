@@ -110,11 +110,10 @@ h1 {
     cursor: pointer;
 }
 .hidden-check{
-    opacity: 0;
+    display: none;
 }
 .show-check{
-    opacity: 1;
-    transition: all .5s;
+    display: initial;
 }
 
 .opcao h2 {
@@ -268,7 +267,7 @@ h1 {
 
 .hidden {
     top: 0;
-    opacity: 0;
+    display: none;
     z-index: -1;
 }
 
@@ -276,3 +275,8 @@ h1 {
     font-weight: 700;
 }
 
+.assetOption {
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+}
