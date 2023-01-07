@@ -25,7 +25,7 @@
                     <h2>Parmegiana</h2>
                     <p>um pouco de batata um pouco de arroz</p>
                     <div>
-                        <h3>R$43,90 </h3>
+                        <h3 data-test="item-price">R$44,20 </h3>
                         <img src="./assets/Vector.svg" alt="" id="checkHiddenParme" class="hidden-check">
                     </div>
                 </div>
@@ -35,7 +35,7 @@
                     <h2>Strogonoff</h2>
                     <p>um pouco de batata palha um pouco de arroz</p>
                     <div>
-                        <h3>R$28,00 </h3>
+                        <h3 data-test="item-price">R$28,00 </h3>
                         <img src="./assets/Vector.svg" alt="" id="checkHiddenStrog" class="hidden-check">
                     </div>
                 </div>
@@ -45,7 +45,7 @@
                     <h2>Peixe Grelhado</h2>
                     <p>filé de peixe com alguns legumes</p>
                     <div>
-                        <h3>R$69,90 </h3>
+                        <h3 data-test="item-price">R$69,90 </h3>
                         <img src="./assets/Vector.svg" alt="" id="checkHiddenFish" class="hidden-check">
                     </div>
                 </div>
@@ -55,7 +55,7 @@
                     <h2>Almôndega</h2>
                     <p>algumas unidades de almôndega</p>
                     <div>
-                        <h3>R$38,90 </h3>
+                        <h3 data-test="item-price">R$38,90 </h3>
                         <img src="./assets/Vector.svg" alt="" id="checkHiddenMeat" class="hidden-check">
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                     <h2>Quiche</h2>
                     <p>um quiche interão pra você e sua família</p>
                     <div>
-                        <h3>R$15,90 </h3>
+                        <h3 data-test="item-price">R$15,90 </h3>
                         <img src="./assets/Vector.svg" alt="" id="checkHiddenQuiche" class="hidden-check">
                     </div>
                 </div>
@@ -77,52 +77,52 @@
             <div class="step">Agora, sua bebida</div>
 
             <div class="opcoes" >
-                <div class="opcao" id="coquinha" onclick="selecionaBebida('#coquinha', '.drinks', '#checkHiddenCoquinha')">
+                <div data-test="drink" class="opcao" id="coquinha" onclick="selecionaBebida('#coquinha', '.drinks', '#checkHiddenCoquinha')">
                     <img src="./assets/cocacola.jpeg" class="assetOption" alt="">
                     <h2>Coquinha gelada</h2>
                     <p>Lata 350ml</p>
                     <div>
-                        <h3>R$6,90 </h3>
+                        <h3 data-test="item-price">R$6,90 </h3>
                         <img src="./assets/Vector.svg" alt="" id="checkHiddenCoquinha" class="hidden-check">
                     </div>
                 </div>
 
-                <div class="opcao" id="pinkMoon" onclick="selecionaBebida('#pinkMoon','.drinks', '#checkHiddenPink')">
+                <div data-test="drink" class="opcao" id="pinkMoon" onclick="selecionaBebida('#pinkMoon','.drinks', '#checkHiddenPink')">
                     <img src="./assets/pinkmoon.jpeg" class="assetOption" alt="">
                     <h2>Pink Moon</h2>
                     <p>Chopp de vinho 600ml para alegrar seu dia</p>
                     <div>
-                        <h3>R$15,90 </h3>
+                        <h3 data-test="item-price">R$15,90 </h3>
                         <img src="./assets/Vector.svg" alt="" id="checkHiddenPink" class="hidden-check">
                     </div>
                 </div>
 
-                <div class="opcao" id="fys" onclick="selecionaBebida('#fys', '.drinks', '#checkHiddenFys')">
+                <div data-test="drink" class="opcao" id="fys" onclick="selecionaBebida('#fys', '.drinks', '#checkHiddenFys')">
                     <img src="./assets/fys.jpeg" class="assetOption" alt="">
                     <h2>Fys</h2>
                     <p>Lata 350ml, 50% menos açúcar</p>
                     <div>
-                        <h3>R$2,98 </h3>
+                        <h3 data-test="item-price">R$2,98 </h3>
                         <img src="./assets/Vector.svg" alt="" id="checkHiddenFys" class="hidden-check">
                     </div>
                 </div>
 
-                <div class="opcao" id="jesus" onclick="selecionaBebida('#jesus', '.drinks', '#checkHiddenJesus')">
+                <div data-test="drink" class="opcao" id="jesus" onclick="selecionaBebida('#jesus', '.drinks', '#checkHiddenJesus')">
                     <img src="./assets/guaranájesus.jpeg" class="assetOption" alt="">
                     <h2>Guaraná Jesus</h2>
                     <p>350ml de refrigerante sabor rosa</p>
                     <div>
-                        <h3>R$8,70</h3>
+                        <h3 data-test="item-price">R$8,70</h3>
                         <img src="./assets/Vector.svg" alt="" id="checkHiddenJesus" class="hidden-check">
                     </div>
                 </div>
 
-                <div class="opcao" id="mineirinho" onclick="selecionaBebida('#mineirinho', '.drinks', '#checkHiddenMineirinho')">
+                <div data-test="drink" class="opcao" id="mineirinho" onclick="selecionaBebida('#mineirinho', '.drinks', '#checkHiddenMineirinho')">
                     <img src="./assets/guaravita.jpeg" class="assetOption" alt="">
                     <h2>Guaravita</h2>
                     <p>Copo 290ml do melhor guaraná do mundo</p>
                     <div>
-                        <h3>R$2,60 </h3>
+                        <h3 data-test="item-price">R$2,60 </h3>
                         <img src="./assets/Vector.svg" alt="" id="checkHiddenMineirinho" class="hidden-check">
                     </div>
                 </div>
@@ -135,53 +135,53 @@
             <div class="step">Por fim, sua sobremesa</div>
 
             <div class="opcoes">
-                <div class="opcao" id="tiramisu" onclick="selecionaSobremesa('#tiramisu', '.desserts', '#checkHiddenTiramisu')">
+                <div data-test="dessert" class="opcao" id="tiramisu" onclick="selecionaSobremesa('#tiramisu', '.desserts', '#checkHiddenTiramisu')">
                     <img src="./assets/tiramisu.jpeg" class="assetOption" alt="">
                     <h2>Tiramisu</h2>
                     <p>Uma fatia de delícia, nem sei escrever descrição pra isso</p>
                     <div>
-                        <h3>R$18,90 </h3>
+                        <h3 data-test="item-price">R$18,90 </h3>
                         <img src="./assets/Vector.svg" alt="" id="checkHiddenTiramisu" class="hidden-check">
                     </div>
                     
                 </div>
 
-                <div class="opcao" id="pavê" onclick="selecionaSobremesa('#pavê', '.desserts', '#checkHiddenPave')">
+                <div data-test="dessert" class="opcao" id="pavê" onclick="selecionaSobremesa('#pavê', '.desserts', '#checkHiddenPave')">
                     <img src="./assets/pave.jpeg" class="assetOption" alt="">
                     <h2>Pavê de verdade</h2>
                     <p>um delicioso pave de verdade (sem mousse)</p>
                     <div>
-                        <h3>R$23,70 </h3>
+                        <h3 data-test="item-price">R$23,70 </h3>
                         <img src="./assets/Vector.svg" alt="" id="checkHiddenPave" class="hidden-check">
                     </div>
                 </div>
 
-                <div class="opcao" id="pudim" onclick="selecionaSobremesa('#pudim', '.desserts', '#checkHiddenPudim')">
+                <div data-test="dessert" class="opcao" id="pudim" onclick="selecionaSobremesa('#pudim', '.desserts', '#checkHiddenPudim')">
                     <img src="./assets/pudim.png" class="assetOption" alt="">
                     <h2>Pudim</h2>
                     <p>Apenas pudim, não tem como dar errado</p>
                     <div>
-                        <h3>R$15,90 </h3>
+                        <h3 data-test="item-price">R$15,90 </h3>
                         <img src="./assets/Vector.svg" alt="" id="checkHiddenPudim" class="hidden-check">
                     </div>
                 </div>
 
-                <div class="opcao" id="alema" onclick="selecionaSobremesa('#alema', '.desserts', '#checkHiddenAlema')">
+                <div data-test="dessert" class="opcao" id="alema" onclick="selecionaSobremesa('#alema', '.desserts', '#checkHiddenAlema')">
                     <img src="./assets/alema.jpeg" class="assetOption" alt="">
                     <h2>Torta Alemã</h2>
                     <p>um incrível doce de textura amanteigada</p>
                     <div>
-                        <h3>R$30,80 </h3>
+                        <h3 data-test="item-price">R$30,80 </h3>
                         <img src="./assets/Vector.svg" alt="" id="checkHiddenAlema" class="hidden-check">
                     </div>
                 </div>
 
-                <div class="opcao" id="torta" onclick="selecionaSobremesa('#torta', '.desserts', '#checkHiddenTorta')">
+                <div data-test="dessert" class="opcao" id="torta" onclick="selecionaSobremesa('#torta', '.desserts', '#checkHiddenTorta')">
                     <img src="./assets/torta.jpeg" class="assetOption" alt="">
                     <h2>Torta de Limão</h2>
                     <p>tortinha de limão inteira</p>
                     <div>
-                        <h3>R$15,90 </h3>
+                        <h3 data-test="item-price">R$15,90 </h3>
                         <img src="./assets/Vector.svg" alt="" id="checkHiddenTorta" class="hidden-check">
                     </div>
                 </div>
@@ -189,28 +189,28 @@
         </div>
 
         <div class="footer">
-            <button id="btnOrderEnd" disabled onclick="checkout('.sonic', '.modal')">
+            <button data-test="order-btn" id="btnOrderEnd" disabled onclick="checkoutCancel('.sonic', '.modal')">
                 Selecione os 3 itens</br>para fechar o pedido
             </button>
         </div>
 
         <div class="sonic hidden" ></div>
-        <div class="modal hidden" >
+        <div data-test="confirm-order-modal" class="modal hidden" >
 
             <h2 class="confirm">Confirme seu pedido</h2>
             
-            <div>
-                <p class="item">aaaaaaa</p>
-                <p class="preco">00,00</p>
-            </div>
-
-            <div>
+            <div class="checkoutDish">
                 <p class="item">aaaaa</p>
                 <p class="preco">00,00</p>
             </div>
 
-            <div>
-                <p class="item">aaaa</p>
+            <div class="checkoutDrink">
+                <p class="item">aaaaa</p>
+                <p class="preco">00,00</p>
+            </div>
+
+            <div class="checkoutDessert">
+                <p class="item">aaaaa</p>
                 <p class="preco">00,00</p>
             </div>
 
@@ -219,8 +219,8 @@
                 <p class="valor">R$ 00,00</p>
             </div>
             <div>
-                <button class="finish">Tudo certo, pode pedir!</button>
-                <button class="cancel" onclick="checkout('.sonic', '.modal')">Cancelar</button>
+                <buttond data-test="confirm-order-btn" class="finish" onclick="sendMsg()">Tudo certo, pode pedir!</button>
+                <button data-test="cancel-order-btn" class="cancel" onclick="checkoutCancel('.sonic', '.modal')">Cancelar</button>
             </div>
         </div>
         
