@@ -1,6 +1,12 @@
+//preços produtos
 let dishPrice = 0; //<-- armazena o preço do prato
 let drinkPrice = 0; //<-- armazena o preço da bebida
 let dessertPrice = 0; //<-- armazena o preço da sobremesa
+
+//nomes produtos
+let dishName ="";
+let drinkName ="";
+let dessertName=""
 
 
 
@@ -16,8 +22,7 @@ function selecionaPrato(prato, sectionName, checkmark) {
     const selectedBtn = document.querySelector(prato); //<--quem chamou a função
     const section = document.querySelector(sectionName) //<-- captura a seção
     const btnSelectedBefore = section.querySelector(`.selected`); //<-- captura a opção que tenha a classe selected, ou seja, que está selecionado
-    const chek = document.querySelector(checkmark); //<-- captura o checkmark que desejo mostrar
-    const checkedBefore = document.querySelector('.show-check'); //<-- captura o checkmark que está sendo mostrado atualmente
+    const chek = document.querySelector(checkmark); //<-- captura o checkmark que desejo mostrar //<-- captura o checkmark que está sendo mostrado atualmente
     
     if (btnSelectedBefore !== null) { //<-- caso btnSelectedBefore encontre alguém selecionado
         btnSelectedBefore.classList.remove("selected"); //<-- remove a seleção
@@ -26,13 +31,12 @@ function selecionaPrato(prato, sectionName, checkmark) {
     
     selectedBtn.classList.add("selected"); //<-- adiciona a seleção
     chek.classList.add('show-check'); //<-- adiciona o checkmark
+
+    console.log(selectedBtn)
     
-
-
     if (!order.includes(1)) {
         order.push(1)
     }
-
     btnEnable(order)
 };
 
@@ -43,7 +47,6 @@ function selecionaBebida(bebida, sectionName, checkmark) {
     const btnSelectedBefore = section.querySelector(`.selected`);
     const selectedBtn = document.querySelector(bebida);
     const chek = document.querySelector(checkmark);
-    const checkedBefore = document.querySelector('.show-check');
     
     if (btnSelectedBefore !== null) {
         btnSelectedBefore.classList.remove("selected");
@@ -66,7 +69,6 @@ function selecionaSobremesa(sobremesa, sectionName, checkmark) {
     const btnSelectedBefore = section.querySelector(`.selected`);
     const selectedBtn = document.querySelector(sobremesa);
     const chek = document.querySelector(checkmark);
-    const checkedBefore = document.querySelector('.show-check');
     
     if (btnSelectedBefore !== null) {
         btnSelectedBefore.classList.remove("selected");
@@ -115,4 +117,3 @@ function cancel() {
         })
     }
 }
-
