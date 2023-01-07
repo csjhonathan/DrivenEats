@@ -157,7 +157,7 @@ Total: R$ ${totalZap.toFixed(2)}
 Nome: ${clientName}
 Endereço: ${clientAddress}`);
 
-window.open(`https://wa.me/55555555555555?text=${msgZap}`, '_blank');
+window.open(`https://wa.me/552171516055?text=${msgZap}`, '_blank');
 return msgZap
 }
 
