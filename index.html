@@ -22,7 +22,7 @@
             <div class="opcoes" id="opcoes">
                 <div class="opcao" data-test="dish" id="parmegiana" onclick="selecionaPrato('#parmegiana', '.dishes', '#checkHiddenParme')">
                     <img src="./assets/parmegiana.jpeg" alt="" class="assetOption">
-                    <h2>Parmegiana</h2>
+                    <h2 data-test="item-name">Parmegiana</h2>
                     <p>um pouco de batata um pouco de arroz</p>
                     <div>
                         <h3 data-test="item-price">R$44,20 </h3>
@@ -32,7 +32,7 @@
 
                 <div class="opcao" data-test="dish" id="strogonoff" onclick="selecionaPrato('#strogonoff', '.dishes', '#checkHiddenStrog')">
                     <img src="./assets/strogonoff.jpeg" class="assetOption" alt="">
-                    <h2>Strogonoff</h2>
+                    <h2 data-test="item-name">Strogonoff</h2>
                     <p>um pouco de batata palha um pouco de arroz</p>
                     <div>
                         <h3 data-test="item-price">R$28,00 </h3>
@@ -42,7 +42,7 @@
 
                 <div class="opcao" data-test="dish" id="peixinho" onclick="selecionaPrato('#peixinho', '.dishes', '#checkHiddenFish')">
                     <img src="./assets/peixinho.jpeg" alt="" class="assetOption">
-                    <h2>Peixe Grelhado</h2>
+                    <h2 data-test="item-name">Peixe Grelhado</h2>
                     <p>filé de peixe com alguns legumes</p>
                     <div>
                         <h3 data-test="item-price">R$69,90 </h3>
@@ -52,7 +52,7 @@
 
                 <div class="opcao" data-test="dish" id="almondega" onclick="selecionaPrato('#almondega', '.dishes', '#checkHiddenMeat')">
                     <img src="./assets/almondega.jpeg" class="assetOption" alt="">
-                    <h2>Almôndega</h2>
+                    <h2 data-test="item-name">Almôndega</h2>
                     <p>algumas unidades de almôndega</p>
                     <div>
                         <h3 data-test="item-price">R$38,90 </h3>
@@ -62,7 +62,7 @@
 
                 <div class="opcao" id="quiche" onclick="selecionaPrato('#quiche', '.dishes', '#checkHiddenQuiche')">
                     <img src="./assets/quiche.jpeg" class="assetOption" alt="">
-                    <h2>Quiche</h2>
+                    <h2 data-test="item-name">Quiche</h2>
                     <p>um quiche interão pra você e sua família</p>
                     <div>
                         <h3 data-test="item-price">R$15,90 </h3>
@@ -79,7 +79,7 @@
             <div class="opcoes" >
                 <div data-test="drink" class="opcao" id="coquinha" onclick="selecionaBebida('#coquinha', '.drinks', '#checkHiddenCoquinha')">
                     <img src="./assets/cocacola.jpeg" class="assetOption" alt="">
-                    <h2>Coquinha gelada</h2>
+                    <h2 data-test="item-name">Coquinha gelada</h2>
                     <p>Lata 350ml</p>
                     <div>
                         <h3 data-test="item-price">R$6,90 </h3>
@@ -89,7 +89,7 @@
 
                 <div data-test="drink" class="opcao" id="pinkMoon" onclick="selecionaBebida('#pinkMoon','.drinks', '#checkHiddenPink')">
                     <img src="./assets/pinkmoon.jpeg" class="assetOption" alt="">
-                    <h2>Pink Moon</h2>
+                    <h2 data-test="item-name">Pink Moon</h2>
                     <p>Chopp de vinho 600ml para alegrar seu dia</p>
                     <div>
                         <h3 data-test="item-price">R$15,90 </h3>
@@ -99,7 +99,7 @@
 
                 <div data-test="drink" class="opcao" id="fys" onclick="selecionaBebida('#fys', '.drinks', '#checkHiddenFys')">
                     <img src="./assets/fys.jpeg" class="assetOption" alt="">
-                    <h2>Fys</h2>
+                    <h2 data-test="item-name">Fys</h2>
                     <p>Lata 350ml, 50% menos açúcar</p>
                     <div>
                         <h3 data-test="item-price">R$2,98 </h3>
@@ -109,7 +109,7 @@
 
                 <div data-test="drink" class="opcao" id="jesus" onclick="selecionaBebida('#jesus', '.drinks', '#checkHiddenJesus')">
                     <img src="./assets/guaranájesus.jpeg" class="assetOption" alt="">
-                    <h2>Guaraná Jesus</h2>
+                    <h2 data-test="item-name">Guaraná Jesus</h2>
                     <p>350ml de refrigerante sabor rosa</p>
                     <div>
                         <h3 data-test="item-price">R$8,70</h3>
@@ -119,7 +119,7 @@
 
                 <div data-test="drink" class="opcao" id="mineirinho" onclick="selecionaBebida('#mineirinho', '.drinks', '#checkHiddenMineirinho')">
                     <img src="./assets/guaravita.jpeg" class="assetOption" alt="">
-                    <h2>Guaravita</h2>
+                    <h2 data-test="item-name">Guaravita</h2>
                     <p>Copo 290ml do melhor guaraná do mundo</p>
                     <div>
                         <h3 data-test="item-price">R$2,60 </h3>
@@ -137,7 +137,7 @@
             <div class="opcoes">
                 <div data-test="dessert" class="opcao" id="tiramisu" onclick="selecionaSobremesa('#tiramisu', '.desserts', '#checkHiddenTiramisu')">
                     <img src="./assets/tiramisu.jpeg" class="assetOption" alt="">
-                    <h2>Tiramisu</h2>
+                    <h2 data-test="item-name">Tiramisu</h2>
                     <p>Uma fatia de delícia, nem sei escrever descrição pra isso</p>
                     <div>
                         <h3 data-test="item-price">R$18,90 </h3>
@@ -148,7 +148,7 @@
 
                 <div data-test="dessert" class="opcao" id="pavê" onclick="selecionaSobremesa('#pavê', '.desserts', '#checkHiddenPave')">
                     <img src="./assets/pave.jpeg" class="assetOption" alt="">
-                    <h2>Pavê de verdade</h2>
+                    <h2 data-test="item-name">Pavê de verdade</h2>
                     <p>um delicioso pave de verdade (sem mousse)</p>
                     <div>
                         <h3 data-test="item-price">R$23,70 </h3>
@@ -158,7 +158,7 @@
 
                 <div data-test="dessert" class="opcao" id="pudim" onclick="selecionaSobremesa('#pudim', '.desserts', '#checkHiddenPudim')">
                     <img src="./assets/pudim.png" class="assetOption" alt="">
-                    <h2>Pudim</h2>
+                    <h2 data-test="item-name">Pudim</h2>
                     <p>Apenas pudim, não tem como dar errado</p>
                     <div>
                         <h3 data-test="item-price">R$15,90 </h3>
@@ -168,7 +168,7 @@
 
                 <div data-test="dessert" class="opcao" id="alema" onclick="selecionaSobremesa('#alema', '.desserts', '#checkHiddenAlema')">
                     <img src="./assets/alema.jpeg" class="assetOption" alt="">
-                    <h2>Torta Alemã</h2>
+                    <h2 data-test="item-name">Torta Alemã</h2>
                     <p>um incrível doce de textura amanteigada</p>
                     <div>
                         <h3 data-test="item-price">R$30,80 </h3>
@@ -178,7 +178,7 @@
 
                 <div data-test="dessert" class="opcao" id="torta" onclick="selecionaSobremesa('#torta', '.desserts', '#checkHiddenTorta')">
                     <img src="./assets/torta.jpeg" class="assetOption" alt="">
-                    <h2>Torta de Limão</h2>
+                    <h2 data-test="item-name">Torta de Limão</h2>
                     <p>tortinha de limão inteira</p>
                     <div>
                         <h3 data-test="item-price">R$15,90 </h3>
@@ -190,7 +190,7 @@
 
         <div class="footer">
             <button data-test="order-btn" id="btnOrderEnd" disabled onclick="checkoutCancel('.sonic', '.modal')">
-                Selecione os 3 itens</br>para fechar o pedido
+                Selecione os 3 itens </br>para fechar o pedido
             </button>
         </div>
 
@@ -219,8 +219,8 @@
                 <p class="valor">R$ 00,00</p>
             </div>
             <div>
-                <buttond data-test="confirm-order-btn" class="finish" onclick="sendMsg()">Tudo certo, pode pedir!</button>
-                <button data-test="cancel-order-btn" class="cancel" onclick="checkoutCancel('.sonic', '.modal')">Cancelar</button>
+                <button class="finish" data-test="confirm-order-btn"  onclick="sendMsg()">Tudo certo, pode pedir!</button>
+                <button  class="cancel" data-test="cancel-order-btn" onclick="checkoutCancel('.sonic', '.modal')">Cancelar</button>
             </div>
         </div>
         
